@@ -34,9 +34,9 @@ console.log(numsTimesTwo);
 
 const pizzaToppings = ['Pineapple', 'Olives', 'Anchovies'];
 
-const [firstIngredient, secondIngredient] = pizzaToppings;
 
 // Your code here:
+const [firstIngredient, secondIngredient] = pizzaToppings;
 
 console.log(firstIngredient);
 console.log(secondIngredient);
@@ -55,15 +55,80 @@ const car = {
   model: 'Q5',
 };
 
-const {make, model} = car;
 
 // Your code here:
+const {make, model} = car;
+
 
 console.log(make);
 console.log(model);
 
 
-// Excercise 4
+// ! Exercise 4: 
+// a. Duplicate the provided `morePizzaToppings` array using the spread 
+//    operator and assign it to a variable named `uncontroversialPizzaToppings`.
+// 
+// b. Console log the `uncontroversialPizzaToppings` variable.
+//
+// Starting code (don't modify this):
+
+const morePizzaToppings = ['Cheese', 'Sauce'];
+
+// Your code here:
+
+const uncontroversialPizzaToppings = [...morePizzaToppings];
+
+console.log(uncontroversialPizzaToppings);
+
+// ! Exercise 5:
+// a. Duplicate the provided `anotherCar` object and spread its values into a 
+//    new variable named `myCar`.
+//
+// b. Change the `make` and `model` properties of the `myCar` object to new 
+//    values.
+//
+// c. Console log both objects and observe the results.
+//
+// Starting code (don't modify this):
+
+const anotherCar = {
+  make: 'Toyota',
+  model: 'RAV4',
+};
 
 
-// Excercise 5
+// Your code here:
+
+const myCar = {...anotherCar};
+
+myCar.make = 'Nissan';
+myCar.model = 'Versa';
+
+console.log(myCar);
+console.log(anotherCar);
+
+// ! Exercise 6:
+// a. Define a variable named `propertyName` and assign a string (like 
+//    'username', 'age', or 'email') to it.
+// 
+// b. Create an object named `userProfile`. 
+// 
+// c. Use `propertyName` as a dynamic key in `userProfile`. Assign it a 
+//    relevant value.
+//
+// d. Console log the `userProfile` object to see the result.
+//
+// Your code here:
+
+
+const propertyName = 'username';
+
+const userProfile = {
+    [propertyName]: 6,
+};
+
+const selectedUserCount = userProfile[propertyName];
+
+console.log(userProfile);
+console.log(selectedUserCount);
+
