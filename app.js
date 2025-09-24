@@ -132,3 +132,23 @@ const selectedUserCount = userProfile[propertyName];
 console.log(userProfile);
 console.log(selectedUserCount);
 
+// ! Exercise 7: Import and Export
+
+// ! Exercise 8:
+// a. Create a function with two parameters, `noun` and `adjective`.
+// 
+// b. Give `noun` a default value of "cat" and `adjective` a default value of 
+//    "orange".
+//
+// c. The function should log a sentence 'The cat is orange.' by default, but 
+//    should substitute the appropriate parameters when it is supplied with 
+//    arguments.
+//
+// Your code here:
+
+function addTwoParameters(noun = "cat", adjective = "orange") {
+    return `The ${noun} is ${adjective}.`;
+}
+
+console.log(addTwoParameters("Joan", "Blue"));
+
